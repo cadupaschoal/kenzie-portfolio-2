@@ -31,11 +31,16 @@ export const Contacts = () => {
           <motion.div style={{ scale }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Let's talk and{" "}
+                Vamos
                 <Text as="span" type="heading2" color="brand1">
-                  develop solutions for your company
+                  {" "}
+                  conversar
                 </Text>
-                , together!
+                , e juntos,{" "}
+                <Text as="span" type="heading2" color="brand1">
+                  desenvolver soluções
+                </Text>{" "}
+                para sua empresa
               </Text>
             </ContactSectionText>
           </motion.div>
@@ -46,11 +51,11 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My Whatsapp
+                  Meu Whatsapp
                 </Text>
                 <Text color="grey2" type="body2">
-                  I'm available for a voice chat, let's about creativity
-                  together?
+                  Estou disponível para uma conversa, quem sabe criar algum
+                  projeto juntos?
                 </Text>
                 <Text
                   as="a"
@@ -59,7 +64,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
                 >
-                  Talk Now
+                  Ir para Whatsapp
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -70,10 +75,10 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My email
+                  Meu email
                 </Text>
                 <Text color="grey2" type="body2">
-                  Send me an email reporting feedbacks, suggestions and ideas
+                  Um email com feedbacks, sugestões ou idéias é sempre bem-vindo
                 </Text>
 
                 <Text
@@ -86,7 +91,7 @@ export const Contacts = () => {
                     (window.location.href = "mailto:nekelpatrick.com")
                   }
                 >
-                  Send me an email
+                  Enviar um email
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -96,10 +101,12 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My LinkedIn
+                  Meu LinkedIn
                 </Text>
                 <Text color="grey2" type="body2">
-                  We can create more constant interactions as well as a sharing
+                  {/* We can create more constant interactions as well as a sharing
+                  network */}
+                  Podemos criar interações mais constantes ao compartilharmos
                   network
                 </Text>
                 <Text
@@ -109,7 +116,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={linkedInUrl}
                 >
-                  Go to LinkedIn now
+                  Ir para o LinkedIn
                 </Text>
               </ContactCardContent>
             </ContactCard>
